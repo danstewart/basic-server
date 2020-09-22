@@ -3,7 +3,7 @@ Basic server to return local JSON with CORS support
 
 ### Set up
 ```
-git clone ...
+git clone https://github.com/danstewart/basic-server.git
 cd basic-server/
 python -m venv venv
 pip install -r requirements.txt
