@@ -11,7 +11,7 @@ def check():
 
 @app.route("/<file>")
 def index(file):
-    file_path = os.path.join(app.root_path, 'dummy', file)
+    file_path = os.path.join(app.root_path, 'data', file)
 
     if not os.path.isfile(file_path):
         return 'File not found'
