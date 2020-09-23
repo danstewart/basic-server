@@ -1,5 +1,5 @@
 from flask import Flask, json
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 import os
 
 app = Flask(__name__)
@@ -10,6 +10,7 @@ def check():
     return 'Up'
 
 @app.route("/<file>")
+@cross_origin()
 def index(file):
     file_path = os.path.join(app.root_path, 'data', file)
 
